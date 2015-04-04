@@ -13,6 +13,15 @@ body {
     margin:0;
 }
 
+#videoParent{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background:url(//placehold.it/800x600/ada) center top / cover;
+}
+
 p {
     font-family: 'Abel', sans-serif;
     font-size: 20px;
