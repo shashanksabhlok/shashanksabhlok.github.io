@@ -56,30 +56,27 @@ a {
 
 .cd-intro {
   width: 90%;
-  max-width: 2000px;
+  max-width: 768px;
   text-align: center;
 }
 
 .cd-intro {
-  margin: 0px auto;
+  margin: 4em auto;
 }
 @media only screen and (min-width: 768px) {
   .cd-intro {
-    margin: 0px auto;
-    margin-right: 0px auto;
-    margin-left: 0px
+    margin: 5em auto;
   }
 }
 @media only screen and (min-width: 1170px) {
   .cd-intro {
-    margin: 5px auto;
-    margin-right: 5px auto;
+    margin: 6em auto;
   }
 }
 
 .cd-headline {
   font-size: 3rem;
-  line-height: 0.9;
+  line-height: 1.2;
 }
 @media only screen and (min-width: 768px) {
   .cd-headline {
@@ -96,7 +93,7 @@ a {
 .cd-words-wrapper {
   display: inline-block;
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 .cd-words-wrapper b {
   display: inline-block;
@@ -121,9 +118,9 @@ xrotate-1
 
 -------------------------------- */
 .cd-headline.rotate-1 .cd-words-wrapper {
-  -webkit-perspective: 100px;
-  -moz-perspective: 100px;
-  perspective: 100px;
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  perspective: 300px;
 }
 .cd-headline.rotate-1 b {
   opacity: 0;

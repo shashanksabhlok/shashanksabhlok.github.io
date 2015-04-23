@@ -224,17 +224,10 @@ section.success {
 }
 
 #quote {
-    height:100%;
-    width:100%;
-    background:  url("http://i.giphy.com/13nXJ5b7jn23ba.gif")  center center; 
-    background-image: url("frame1.png") center;
-    background-size: cover;
+    background-repeat: repeat;
+    margin: 0;
+    overflow-x: hidden;
 }
-.overlayText {
-    color:#000;
-    position:absolute;
-    top: 0;
-}   
 
 #contact {
     background-color: #96B1D2
