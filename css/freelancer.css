@@ -17,9 +17,9 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 300%;
     z-index: -1;
-    background:url("frame.jpg") center top / cover;
+    background:url() center top/cover;
 }
 
 p {
@@ -94,7 +94,7 @@ hr.star-primary {
 
 hr.star-primary:after {
     color: #BC8F8F;
-    background-color: #708090;
+    background-color: #FF3300;
 }
 
 .img-centered {
@@ -176,7 +176,7 @@ header .intro-text .skills {
 
 .navbar a:focus {
     outline: 0;
-    color: #FF4500;
+    color: #96B1D2;
 }
 
 .navbar .navbar-nav {
@@ -185,7 +185,7 @@ header .intro-text .skills {
 
 .navbar .navbar-nav li a:focus {
     outline: 0;
-    color: #FF4500;
+    color: #96B1D2;
 }
 
 .navbar-default,
@@ -194,7 +194,7 @@ header .intro-text .skills {
 }
 
 section {
-    padding:50px 0;
+    padding: 100px 0;
 }
 
 section h2 {
@@ -207,10 +207,20 @@ section.success {
     background: #ffffff;
 }
 
+#about{
+    background-position: fixed;
+    background-color: #ffffff
+    background-image: url("~/Dropbox/.jpg") no-repeat center center;
+    background-size: cover;
+    margin-left: 0px;
+    height: 300%;
+    width: 100%;
+}
+
+
 #work {
     color: #ffffff;
-    background:#666699;
-    background-image: url("brb.jpg");
+    background:#941751;
 }
 
 @media(max-width:767px) {
@@ -222,11 +232,24 @@ section.success {
         padding-top: 75px;
     }
 }
-
 #quote {
-    background-repeat: repeat;
-    margin: 0;
-    overflow-x: hidden;
+    height:100%;
+    width:100%;
+    background:  url("http://i.giphy.com/13nXJ5b7jn23ba.gif") no-repeat center center fixed; 
+    background-size: cover;
+}
+.overlayText {
+    color:#000;
+    position:absolute;
+    top: 0;
+}   
+.videoContainer {
+    height:100%;
+    width:100%;
+}   
+.videoContainer video {
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #contact {
@@ -300,21 +323,38 @@ section.success {
     margin-top: 15px;
     border: solid 2px #eee;
     font-size: 20px;
-    color: #ffffff;
-    background: 0 0;
-    transition: all .3s ease-in-out;
-}
-
-
-.btn-resume {
-    margin-top: 15px;
-    border: solid 2px #eee;
-    font-size: 20px;
     color: #000000;
     background: 0 0;
     transition: all .3s ease-in-out;
 }
 
+
+.btn-github {
+    margin-top: 15px;
+    border: solid 2px #eee;
+    font-size: 20px;
+    color: #9900CC;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-facebook {
+    margin-top: 15 px;
+    border: solid 2px #eee;
+    font-size: 20 px;
+    color: #ffffff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-linkedin {
+    margin-top: 15 px;
+    border: solid 2px #eee;
+    font-size: 20 px;
+    color: #000000;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
 
 .btn-outline:hover,
 .btn-outline:focus,
@@ -322,16 +362,34 @@ section.success {
 .btn-outline.active {
     border: solid 2px #000000;
     color: #ffffff;
-    
+    background:  #FF0066;
 }
 
-.btn-resume:hover,
-.btn-resume:focus,
-.btn-resume:active,
-.btn-resume.active {
-    border: solid 2px #000000;
+.btn-github:hover,
+.btn-github:focus,
+.btn-github:active,
+.btn-github.active {
+    border: solid 2px #ffffff;
+    color: #9900CC;
+    background:  #D0D0D0;
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus,
+.btn-facebook:active,
+.btn-facebook.active {
+    border: solid 2px #ffffff;
+    color:#ffffff ;
+    background: #4C66A4;
+}
+
+.btn-linkedin:hover,
+.btn-linkedin:focus,
+.btn-linkedin:active,
+.btn-outline.active {
+    border: solid 2 px #ffffff;
     color: #ffffff;
-    background:  #96B1D2;
+    background: #007BB6;
 }
 
 .floating-label-form-group {
@@ -347,6 +405,7 @@ section.success {
     position: relative;
     padding-right: 0;
     font-family: 'Rokkitt', serif;
+    padding-left: 0;
     border: 0;
     border-radius: 0;
     font-size: 1.5em;
