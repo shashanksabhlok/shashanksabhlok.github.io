@@ -323,8 +323,10 @@ section.success {
 
 .btn-outline {
     margin-top: 15px;
-
+    border: solid 2px #eee;
     font-size: 20px;
+    color: #000000;
+    background: 0 0;
     transition: all .3s ease-in-out;
 }
 
