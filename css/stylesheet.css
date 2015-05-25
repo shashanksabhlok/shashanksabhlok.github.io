@@ -235,10 +235,11 @@ section.success {
     }
 }
 #quote {
-    height:200px;
+    height:100%;
     width:100%;
     background:  url("http://i.giphy.com/1GtPTyh7sV6LK.gif") no-repeat center center fixed; 
     background-size: cover;
+    background-position: absolute;
 }
 .overlayText {
     color:#000;
@@ -246,11 +247,11 @@ section.success {
     top: 0;
 }   
 .videoContainer {
-    height:200px;
+    height:100%;
     width:100%;
 }   
 .videoContainer video {
-    min-width: 200px;
+    min-width: 100%;
     min-height: 25%;
 }
 
